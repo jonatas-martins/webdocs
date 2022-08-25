@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'SMario' ;
+    src: url('super-mario.ttf') format('truetype');
+    font-family: normal;
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+
+body { 
+    background-image: url(imagens/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    background-attachment: fixed;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#container { 
+    
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    
+    padding: 20px;
+    margin-top: 75px;
+}
+
+#tit { 
+    font-family: 'SMario', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 10;
+}
+
+.lastResult { 
+    color: white;
+    padding: 3px;
+   
+}

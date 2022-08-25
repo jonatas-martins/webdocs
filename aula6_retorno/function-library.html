@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Function library example</title>
+    <style>
+      input {
+        font-size: 2em;
+        margin: 10px 1px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="numberInput" type="text" />
+    <p></p>
+
+    <script>
+      const input = document.querySelector('.numberInput');
+      const para = document.querySelector('p');
+
+      function squared(num) {
+        return num * num;
+      }
+
+      function cubed(num) {
+        return num * num * num;
+      }
+
+      function fatorial(num) {
+        var x = num;
+        while (x > 1) {
+          num *= x - 1;
+          x--;
+        }
+        return num;
+      }
+
+      function dezPorCento(num) {
+        return num / 10;
+      }
+
+      function dobro(num) {
+        return num * 2;
+      }
+
+      input.onchange = function () {
+        var num = input.value;
+        var res = `<p> ${num} ao quadrado é ${squared(num)}, </p> 
+      <p> ${num} ao cubo é ${cubed(num)},  </p>   
+      <p> ${num} fatorial é ${fatorial(num)},  </p>     
+      <p> 10% dele é ${dezPorCento(num)}, </p>
+      <p> além de  dobro de ${num} ser ${dobro(num)} </p> `;
+        if (isNaN(num)) {
+          para.textContent = 'Você precisa digitar um número!';
+        } else {
+          para.innerHTML = res;
+        }
+      };
+    </script>
+  </body>
+</html>
