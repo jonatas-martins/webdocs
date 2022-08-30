@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section></section>
+    <script>
+      let bandInfo;
+
+      // Put your code here
+
+      bandInform = {
+        name: 'Coleguinhas',
+        nationality: 'Brasileiras',
+        genre: 'sertanejo',
+        members: 3,
+        formed: 2020,
+        split: false,
+        albums: {
+          name1: 'Bar das coleguinhas',
+          released1: 2020,
+          name2: 'Homenagem',
+          released2: 2022,
+        },
+      };
+
+      bandInfo = `Minha banda favorita é as ${bandInform.name} elas são ${bandInform.nationality}, estão em atividade desde ${bandInform.formed}, e o seu primeiro albúm foi o ${bandInform.albums.name1} em ${bandInform.albums.released1} `;
+
+      // Don't edit the code below here
+
+      let para1 = document.createElement('p');
+      para1.textContent = bandInfo;
+      section.appendChild(para1);
+    </script>
+  </body>
+</html>

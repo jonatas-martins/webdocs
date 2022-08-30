@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>
+      This example requires you to enter commands in your browser's JavaScript
+      console (see
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
+        >What are browser developer tools</a
+      >
+      for more information).
+    </p>
+  </body>
+
+  <script>
+    var pessoa = {
+      nome: ['Bob', 'Smith'],
+      idade: 32,
+      sexo: 'Masculino',
+      interesses: ['musica', 'esquiar'],
+      bio: function () {
+        alert(`${this.nome[0]} ${this.nome[1]} tem ${this.idade} anos de idade. 
+        ele gosta de ${this.interesses[0]} e ${this.interesses[1]} `);
+      },
+      saudacao: function () {
+        alert(`Oi! eu sou ${this.nome[0]}. `);
+      },
+    };
+    var myDataName = 'altura';
+    var myDataValue = '1.75m';
+    pessoa[myDataName] = myDataValue;
+
+    var pessoa1 = {
+      nome: 'Chris',
+      saudacao: function () {
+        alert('Oi! Meu nome é ' + this.nome + '.');
+      },
+    };
+
+    var pessoa2 = {
+      nome: 'Brian',
+      saudacao: function () {
+        alert('Oi! Meu nome é ' + this.nome + '.');
+      },
+    };
+
+    var minhaNotificacao = new Notification('Hello!');
+  </script>
+</html>
